@@ -1,9 +1,10 @@
 import { AuthForm, AuthLayout } from '@/components'
 
-export default function Register () {
+function login () {
   return (
     <AuthLayout>
-      <AuthForm title='Registrarse'/>
+      <AuthForm title='Iniciar sesión'/>
     </AuthLayout>
   )
 }
+export default login

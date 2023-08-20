@@ -1,3 +1,5 @@
+import { NavigationAuth } from './components'
+
 interface Prop {
   title: string
 }
@@ -10,6 +12,7 @@ export default function AuthForm ({ title }: Prop) {
         <input required autoComplete="off" type="email" placeholder="Email" className="py-3 px-4 rounded-sm bg-[#333] outline-none"/>
         <input required autoComplete="off" type="password" placeholder="Contraseña" className="py-3 px-4 rounded-sm bg-[#333] outline-none"/>
         <button type="submit" className="mt-4 bg-[#e50914] p-3 rounded-sm">{title}</button>
+        <NavigationAuth />
       </form>
     </>
   )
