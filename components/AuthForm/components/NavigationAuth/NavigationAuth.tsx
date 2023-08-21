@@ -1,9 +1,10 @@
-import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
-function NavigationAuth () {
-  const pathname = usePathname()
+interface Prop {
+  pathname: string
+}
 
+function NavigationAuth ({ pathname }: Prop) {
   return (
     <div>{
         pathname === '/login'

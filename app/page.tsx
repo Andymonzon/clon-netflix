@@ -4,6 +4,7 @@ import { cookies } from 'next/headers'
 
 export default async function Register () {
   const supabase = createServerComponentClient({ cookies })
+  const { data } = await supabase.auth.getUser()
 
   return (
     <AuthLayout>
