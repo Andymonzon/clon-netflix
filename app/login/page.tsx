@@ -1,9 +1,9 @@
-import { AuthForm, AuthLayout } from '@/components'
+import { AuthFormServer, AuthLayout } from '@/components'
 
 function login () {
   return (
     <AuthLayout>
-      <AuthForm title='Iniciar sesión'/>
+      <AuthFormServer/>
     </AuthLayout>
   )
 }

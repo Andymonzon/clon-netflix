@@ -1,14 +1,9 @@
-import { AuthForm, AuthLayout } from '@/components'
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
-import { cookies } from 'next/headers'
+import { AuthFormServer, AuthLayout } from '@/components'
 
 export default async function Register () {
-  const supabase = createServerComponentClient({ cookies })
-  const { data } = await supabase.auth.getUser()
-
   return (
     <AuthLayout>
-      <AuthForm title='Registrarse'/>
+      <AuthFormServer />
     </AuthLayout>
   )
 }
