@@ -10,12 +10,12 @@ function AuthLayout ({ children }: { children: React.ReactNode }) {
       <div className="absolute top-0 left-0 z-10">
         <header className="w-screen px-8 py-6">
           <span className="text-[#e50914]">
-            <SvgNetflix />
+            <SvgNetflix width={170} />
           </span>
         </header>
 
         <div className='w-max mx-auto px-[67px] pt-16  bg-[#000000bf] h-[calc(100vh-94px)] rounded-sm'>
-            {children}
+          {children}
         </div>
       </div>
     </div>
