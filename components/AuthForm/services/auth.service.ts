@@ -58,6 +58,15 @@ export const authSevice = () => {
     }
   }
 
+  const logOut = async () => {
+    try {
+      await supabase.auth.signOut()
+      router.refresh()
+    } catch (error) {
+      if (error instanceof Error) setError(error.message)
+    }
+  }
+
   const getEmail = (email: string) => {
     setEmail(email)
   }
@@ -73,6 +82,7 @@ export const authSevice = () => {
     getPassword,
     signIn,
     signUp,
-    error
+    error,
+    logOut
   }
 }
