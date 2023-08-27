@@ -7,7 +7,7 @@ import { SvgNetflix } from '..'
 
 function Navbar () {
   return (
-    <nav className='flex justify-between px-14 py-[20px] items-center'>
+    <nav className='flex justify-between px-14 py-[20px] items-center bg-gradient-to-b from-[#141414cc] to-transparent'>
       <span className='text-[#e50914]'>
         <SvgNetflix width={93} />
       </span>
