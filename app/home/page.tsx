@@ -16,8 +16,10 @@ async function home () {
 
   return (
     <div>
-      <Image priority className='absolute top-0 left-0 z-[-1] w-full h-screen' src={`https://image.tmdb.org/t/p/original${trendingMovies[0].backdrop_path}`} width={1366} height={667} alt='movie poster' />
-      <h1>Home</h1>
+      <div className='h-screen'>
+        <Image priority className='absolute top-0 left-0 z-[-1] w-full h-screen' width={1366} height={667} src={`https://image.tmdb.org/t/p/original${trendingMovies[0].backdrop_path}`} alt='movie poster' />
+      </div>
+
     </div>
   )
 }

@@ -2,12 +2,12 @@ import Image from 'next/image'
 import defaultImg from '@/public/default-img-user.png'
 import { IconCaretDownFilled, IconCaretUpFilled } from '@tabler/icons-react'
 import './Navbar.css'
-import Logout from './components/Logout/Logout'
+import { Logout, NavbarGradient } from './components'
 import { SvgNetflix } from '..'
 
 function Navbar () {
   return (
-    <nav className='flex justify-between px-14 py-[20px] items-center bg-gradient-to-b from-[#141414cc] to-transparent'>
+    <NavbarGradient>
       <span className='text-[#e50914]'>
         <SvgNetflix width={93} />
       </span>
@@ -21,7 +21,7 @@ function Navbar () {
           </div>
         </div>
       </div>
-    </nav >
+    </NavbarGradient >
   )
 }
 
