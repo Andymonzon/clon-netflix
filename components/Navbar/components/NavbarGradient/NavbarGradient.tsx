@@ -25,7 +25,7 @@ function NavbarGradient ({ children }: Prop) {
     }
   }, [])
   return (
-    <nav className={`flex w-full justify-between px-14 py-[20px] items-center fixed ${isVisible}`} style={{ transition: 'background 0.3s ease-in-out' }} ref={reference}>{children}</nav>)
+    <nav className={`flex w-full justify-between px-14 py-[20px] items-center fixed z-10 ${isVisible}`} style={{ transition: 'background 0.3s ease-in-out' }} ref={reference}>{children}</nav>)
 }
 
 export default NavbarGradient
