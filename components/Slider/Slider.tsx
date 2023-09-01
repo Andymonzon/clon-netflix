@@ -37,7 +37,7 @@ function Slider ({ data, gap = 5, view = 5 }: Props) {
       {
         data.map((movie) => (
           <SwiperSlide key={movie.id}>
-            <Image priority src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt='movie poster' width={250} height={140} />
+            <Image className='rounded' priority src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt='movie poster' width={285} height={160} />
           </SwiperSlide>
         ))
       }

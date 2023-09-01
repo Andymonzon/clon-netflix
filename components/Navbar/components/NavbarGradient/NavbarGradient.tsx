@@ -7,7 +7,7 @@ interface Prop {
 }
 
 function NavbarGradient ({ children }: Prop) {
-  const [isVisible, setIsVisible] = useState('bg-gradient-to-b from-[#141414bb] to-transparent')
+  const [isVisible, setIsVisible] = useState('bg-gradient-to-b from-[#141414dd] to-transparent')
 
   const reference = useRef<HTMLDivElement>(null)
   useEffect(() => {
@@ -25,7 +25,7 @@ function NavbarGradient ({ children }: Prop) {
     }
   }, [])
   return (
-    <nav className={`flex w-full justify-between px-14 py-[20px] items-center fixed z-10 ${isVisible}`} style={{ transition: 'background 0.3s ease-in-out' }} ref={reference}>{children}</nav>)
+    <nav className={`flex w-full justify-between px-14 py-[20px] items-center fixed z-[100] ${isVisible}`} style={{ transition: 'background 0.3s ease-in-out' }} ref={reference}>{children}</nav>)
 }
 
 export default NavbarGradient
